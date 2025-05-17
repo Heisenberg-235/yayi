@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Deriva y Conquista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Deriva y Conquista</h1>
+  </header>
+
+  <main>
+    <section id="info">
+      <p id="turno">Turno: Jugador 1</p>
+      <button id="btn-dado">Lanzar dado</button>
+      <p id="mensaje" role="status"></p>
+    </section>
+
+    <section id="tablero">
+      <!-- Se rellena con casillas dinámicamente -->
+    </section>
+
+    <dialog id="pregunta-modal">
+      <form method="dialog">
+        <p id="pregunta-texto"></p>
+        <input type="text" id="respuesta" placeholder="Escribe la derivada">
+        <button type="submit">Responder</button>
+      </form>
+    </dialog>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

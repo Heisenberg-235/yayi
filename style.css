@@ -1,0 +1,75 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  #info {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  #btn-dado {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  #tablero {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  
+  .casilla {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .casilla.pregunta {
+    background-color: #f9d45c;
+  }
+  
+  .ficha {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .ficha.jugador1 { background-color: red; top: 5px; left: 5px; }
+  .ficha.jugador2 { background-color: blue; top: 5px; right: 5px; }
+  .ficha.jugador3 { background-color: green; bottom: 5px; left: 5px; }
+  .ficha.jugador4 { background-color: purple; bottom: 5px; right: 5px; }
+  
+  dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+  }
+  
